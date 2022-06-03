@@ -26,10 +26,11 @@ document.querySelector('.check').addEventListener('click', function () {
   if (!guess) {
     document.querySelector('.message').textContent = 'No Number !';
   }
-  if (score > 0) {
-    if (guess === number) {
-      document.querySelector('.number').textContent = number;
+    else if (guess === number) {
+      //document.querySelector('.number').textContent = number;
       document.querySelector('.message').textContent = 'Correct Number!';
+      document.querySelector('body').style.backgroundColor = '#60b347';
+      document.querySelector('.number').style.width = '30rem';
       increaseScore(scoreNumber);
     } else if (guess > number) {
       document.querySelector('.message').textContent = 'Too High!';
@@ -38,7 +39,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.message').textContent = 'Too Low!';
       decreaseScore(scoreNumber);
     }
-  } else {
+   else {
     document.querySelector('.message').textContent = 'You Lost the Game!';
   }
 });
