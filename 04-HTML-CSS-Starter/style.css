@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(52, 72, 161);
+  font-family: arial;
+  font-size: 20px;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* selection based on class name*/
+.first {
+  color: red;
+}
+
+/* selection based on id name*/
+#your-name {
+  background-color: yellow;
+  border: 5px solid #444;
+  width: 400px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+/*apply for multiple elements*/
+
+input,
+button {
+  padding: 10px;
+  font-size: 15px;
+}
+
+a {
+  background-color: violet;
+}
+
+/*select the h2 inside the box with id your-name*/
+
+#your-name h2 {
+  color: olivedrab;
+}
+
+#wolf-pic {
+  width: 300px;
+}
